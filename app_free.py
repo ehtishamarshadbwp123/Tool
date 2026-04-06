@@ -107,8 +107,6 @@ def update_logic():
         st.session_state.modem = st.session_state.up - MODEM_LO
 
 def main():
-    # --- Sidebar Branding (RESTORED FULL COCC NAME) ---
-    st.sidebar.markdown("<div class='sidebar-name'>Ehtisham Arshad</div>", unsafe_allow_html=True)
     st.sidebar.markdown("""
     <h2 style='color:#00f2ff; text-align:center; margin-bottom:0; font-size: 3.5rem; font-family: "Arial Black", sans-serif; text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);'>
         COCC
@@ -120,7 +118,7 @@ def main():
     st.sidebar.radio("SATELLITE SELECT", ["MM1", "1R"], key="current_sat", on_change=update_logic)
     st.sidebar.radio("BAND SELECT", ["C-BAND", "KU-BAND"], key="current_band", on_change=update_logic)
 # Main Header
-    st.markdown("<h1 class='glow-text'>FREQUENCY CONVERSION SYSTEM</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='glow-text'>FREQUENCY CALCULATION SYSTEM</h1>", unsafe_allow_html=True)
 
     # --- Feature 1: Main Conversion Section ---
     st.markdown("<div class='section-header'>1. MAIN FREQUENCY CONVERSION</div>", unsafe_allow_html=True)
